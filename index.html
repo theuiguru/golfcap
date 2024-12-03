@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><title>GolfCap</title></head><body><h2>GolfCap</h2>
+Par: <input type="number" id="par"><br/>Actual # of Strokes: <input type="number" id="actualPar" oninput="calculate()"><div id="result"></div><script>
+function calculate() {
+  // Get the input value
+  var par = document.getElementById('par').value;
+  var actualPar = document.getElementById('actualPar').value;
+  
+  // Perform the calculation (e.g., multiply by 2)
+  var result = actualPar - par;
+  // Display the result in the div
+  document.getElementById('result').innerText = "Handicap Score: " + result;
+}
+</script></body></html>
